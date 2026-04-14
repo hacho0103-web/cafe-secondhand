@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="카페 그로퍼 폐업 세일 — 가구 & 소품 판매">
+  <title>GROPER — Closing Sale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="header-label">Seoul &middot; Gwangjin-gu &middot; 2026</p>
+    <h1 class="site-title">GROPER</h1>
+    <p class="header-copy">
+      카페 그로퍼가 문을 닫습니다.<br>
+      공간을 채웠던 것들이 새로운 곳을 찾고 있어요.
+    </p>
+    <div class="header-rule"></div>
+    <div class="header-contact">
+      <span>&#128205; 서울시 광진구 자양로 22길 79 1층</span>
+      <span class="header-sep">&middot;</span>
+      <span>문의: Instagram <a href="https://instagram.com/gropergroper" target="_blank">@gropergroper</a></span>
+    </div>
+  </div>
+</header>
+
+<nav class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active" data-filter="all">전체 <span class="filter-count" id="cnt-all"></span></button>
+    <button class="filter-btn" data-filter="available">판매중 <span class="filter-count" id="cnt-av"></span></button>
+    <button class="filter-btn" data-filter="sold">판매완료 <span class="filter-count" id="cnt-sd"></span></button>
+  </div>
+</nav>
+
+<main class="items-grid" id="grid"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-logo">GROPER</p>
+    <p>서울시 광진구 자양로 22길 79 1층</p>
+    <p>Instagram DM: <a href="https://instagram.com/gropergroper" target="_blank">@gropergroper</a></p>
+    <p class="footer-note">모든 물품 직거래 픽업 &middot; 현장에서 가져가시는 방식으로 진행됩니다</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lb">
+  <button class="lb-close" id="lb-close">&times;</button>
+  <div class="lb-card" id="lb-content"></div>
+</div>
+
+<script src="items.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
