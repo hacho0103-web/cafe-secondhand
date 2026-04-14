@@ -1,86 +1,85 @@
-/* GROPER — Aceternity-inspired dark design */
+/* GROPER — Editorial dark design */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#080808;--surface:#0f0f0f;--surface2:#161616;
-  --border:rgba(255,255,255,0.07);--border-hover:rgba(255,255,255,0.15);
-  --text:#f0f0f0;--text2:#888;--text3:#555;
-  --red:#c4262c;--red-glow:rgba(196,38,44,0.4);
-  --purple:rgba(120,60,255,0.18);--amber:rgba(220,120,40,0.1);
-  --ease:0.22s cubic-bezier(0.4,0,0.2,1);--radius:6px
+  --bg:#000;--surface:#0a0a0a;--surface2:#111;
+  --border:rgba(255,255,255,0.1);--border-hover:rgba(255,255,255,0.28);
+  --text:#fff;--text2:#aaa;--text3:#555;
+  --red:#e52020;--red-glow:rgba(229,32,32,0.45);
+  --ease:0.22s cubic-bezier(0.4,0,0.2,1);--radius:2px
 }
 html{scroll-behavior:smooth}
 body{font-family:"Noto Sans KR",-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
 a{color:inherit}
-.bg-grid{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(255,255,255,0.055) 1px,transparent 1px);background-size:28px 28px}
+.bg-grid{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(255,255,255,0.04) 1px,transparent 1px);background-size:28px 28px}
 header,nav,main,footer,.lightbox{position:relative;z-index:1}
-.site-header{text-align:center;padding:5.5rem 2rem 4.5rem;overflow:hidden;background:radial-gradient(ellipse 80% 55% at 50% 0%,var(--purple),transparent),radial-gradient(ellipse 55% 40% at 85% 60%,var(--amber),transparent),var(--bg)}
-.header-glow{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:500px;height:300px;pointer-events:none;background:radial-gradient(ellipse,rgba(140,80,255,0.12),transparent 65%);filter:blur(30px)}
+.site-header{text-align:center;padding:5.5rem 2rem 4.5rem;overflow:hidden;background:var(--bg)}
+.header-glow{display:none}
 .header-inner{max-width:600px;margin:0 auto;position:relative}
 .header-label{font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--text3);margin-bottom:1.5rem}
-.site-title{font-family:"Playfair Display",Georgia,serif;font-size:clamp(3.5rem,12vw,7rem);font-weight:700;letter-spacing:0.2em;line-height:1;background:linear-gradient(160deg,#ffffff 0%,#c8b8a0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1.8rem}
-.header-copy{font-size:0.88rem;font-weight:300;color:#777;line-height:1.9;margin-bottom:2rem}
-.header-rule{width:32px;height:1px;background:rgba(255,255,255,0.12);margin:0 auto 1.8rem}
+.site-title{font-family:"Bebas Neue",sans-serif;font-size:clamp(4rem,14vw,8.5rem);font-weight:400;letter-spacing:0.12em;line-height:1;color:#fff;margin-bottom:1.8rem}
+.header-copy{font-size:0.88rem;font-weight:300;color:#666;line-height:1.9;margin-bottom:2rem}
+.header-rule{width:32px;height:1px;background:rgba(255,255,255,0.15);margin:0 auto 1.8rem}
 .header-contact{display:flex;gap:0.9rem;justify-content:center;flex-wrap:wrap;align-items:center;font-size:0.72rem;color:var(--text3)}
-.header-contact a{color:#aaa;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:1px;transition:color var(--ease),border-color var(--ease)}
-.header-contact a:hover{color:#fff;border-color:rgba(255,255,255,0.5)}
+.header-contact a{color:#888;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:1px;transition:color var(--ease),border-color var(--ease)}
+.header-contact a:hover{color:#fff;border-color:rgba(255,255,255,0.6)}
 .header-sep{opacity:0.3}
-.filter-bar{position:sticky;top:0;z-index:200;background:rgba(8,8,8,0.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0.65rem 1.5rem}
+.filter-bar{position:sticky;top:0;z-index:200;background:rgba(0,0,0,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0.65rem 1.5rem}
 .filter-inner{max-width:1200px;margin:0 auto;display:flex;gap:0.35rem;justify-content:center}
 .filter-btn{background:transparent;border:1px solid transparent;padding:0.35rem 1rem;font-size:0.72rem;font-family:"Noto Sans KR",sans-serif;font-weight:400;letter-spacing:0.04em;cursor:pointer;color:var(--text3);border-radius:99px;transition:all var(--ease);white-space:nowrap}
 .filter-btn:hover{color:var(--text);border-color:var(--border-hover)}
-.filter-btn.active{background:rgba(255,255,255,0.08);color:#fff;border-color:var(--border-hover)}
+.filter-btn.active{background:rgba(255,255,255,0.1);color:#fff;border-color:var(--border-hover)}
 .filter-count{font-size:0.62rem;margin-left:0.2rem;opacity:0.5}
 .items-grid{max-width:1200px;margin:0 auto;padding:2.5rem 1.5rem 5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 @media(max-width:860px){.items-grid{grid-template-columns:repeat(2,1fr);gap:0.9rem;padding:1.5rem 1rem 4rem}}
 @media(max-width:440px){.items-grid{grid-template-columns:repeat(2,1fr);gap:0.6rem;padding:1rem 0.75rem 3rem}}
 .no-results{grid-column:1/-1;text-align:center;padding:5rem 1rem;color:var(--text3);font-size:0.88rem}
 .item-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer;position:relative;transition:border-color var(--ease),box-shadow var(--ease),transform var(--ease);animation:cardIn 0.4s ease both}
-.item-card::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(350px circle at var(--x,50%) var(--y,50%),rgba(255,255,255,0.04),transparent 65%);opacity:0;transition:opacity 0.3s}
-.item-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.6)}
+.item-card::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(350px circle at var(--x,50%) var(--y,50%),rgba(255,255,255,0.03),transparent 65%);opacity:0;transition:opacity 0.3s}
+.item-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.8)}
 .item-card:hover::before{opacity:1}
-.item-card.sold{opacity:0.75}
+.item-card.sold{opacity:0.65}
 @keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-.item-image{position:relative;aspect-ratio:4/3;overflow:hidden;background:#161616}
-.item-image img{width:100%;height:100%;object-fit:cover;transition:transform 0.55s ease}
-.item-card:hover .item-image img{transform:scale(1.06)}
+.item-image{position:relative;aspect-ratio:4/3;overflow:hidden;background:#0f0f0f}
+.item-image img{width:100%;height:100%;object-fit:cover;transition:transform 0.55s ease;filter:grayscale(20%)}
+.item-card:hover .item-image img{transform:scale(1.06);filter:grayscale(0%)}
 .img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;user-select:none}
-.img-placeholder .ph-num{font-family:"Playfair Display",serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:400;color:rgba(255,255,255,0.06);line-height:1}
+.img-placeholder .ph-num{font-family:"Bebas Neue",sans-serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:rgba(255,255,255,0.07);line-height:1}
 .img-placeholder .ph-text{font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text3);opacity:0.6}
-.sold-dot{position:absolute;top:10px;right:10px;width:36px;height:36px;background:var(--red);border-radius:50%;z-index:10;display:flex;align-items:center;justify-content:center;box-shadow:0 0 12px var(--red-glow),0 0 24px rgba(196,38,44,0.2);animation:dotPop 0.5s cubic-bezier(0.34,1.56,0.64,1) both}
+.sold-dot{position:absolute;top:10px;right:10px;width:36px;height:36px;background:var(--red);border-radius:50%;z-index:10;display:flex;align-items:center;justify-content:center;box-shadow:0 0 14px var(--red-glow),0 0 28px rgba(229,32,32,0.2);animation:dotPop 0.5s cubic-bezier(0.34,1.56,0.64,1) both}
 .sold-dot-text{color:#fff;font-size:6px;font-weight:700;letter-spacing:0.06em;text-align:center;line-height:1.4}
 @keyframes dotPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
 .item-body{padding:0.9rem 1rem 1rem;position:relative;z-index:2}
 .item-num{font-size:0.56rem;letter-spacing:0.2em;color:var(--text3);margin-bottom:0.25rem}
 .item-name{font-size:0.88rem;font-weight:500;color:var(--text);margin-bottom:0.4rem;line-height:1.3}
-.item-price{font-family:"Playfair Display",serif;font-size:0.95rem;color:#e0d0c0;margin-bottom:0.4rem}
-.item-price.is-sold{color:var(--text3);text-decoration:line-through;font-size:0.82rem}
+.item-price{font-family:"Bebas Neue",sans-serif;font-size:1.05rem;letter-spacing:0.05em;color:#fff;margin-bottom:0.4rem}
+.item-price.is-sold{color:var(--text3);text-decoration:line-through;font-size:0.88rem}
 .item-tags{display:flex;gap:0.35rem;flex-wrap:wrap;margin-top:0.35rem}
-.tag{font-size:0.58rem;padding:0.12rem 0.5rem;border-radius:99px;border:1px solid rgba(255,255,255,0.1);color:var(--text3);background:rgba(255,255,255,0.03)}
-.tag-single{font-size:0.58rem;padding:0.12rem 0.5rem;border-radius:99px;border:1px solid rgba(200,180,140,0.25);color:#b09870;background:rgba(200,160,80,0.06)}
+.tag{font-size:0.58rem;padding:0.12rem 0.5rem;border-radius:2px;border:1px solid rgba(255,255,255,0.12);color:var(--text3);background:rgba(255,255,255,0.03)}
+.tag-single{font-size:0.58rem;padding:0.12rem 0.5rem;border-radius:2px;border:1px solid rgba(229,32,32,0.3);color:var(--red);background:rgba(229,32,32,0.06)}
 .item-note{font-size:0.64rem;color:var(--text3);margin-top:0.35rem;font-style:italic}
-.lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1rem}
+.lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1rem}
 .lightbox.open{display:flex}
-.lb-close{position:absolute;top:1.2rem;right:1.4rem;background:none;border:none;color:rgba(255,255,255,0.4);font-size:2rem;line-height:1;cursor:pointer;transition:color var(--ease);z-index:10}
+.lb-close{position:absolute;top:1.2rem;right:1.4rem;background:none;border:none;color:rgba(255,255,255,0.35);font-size:2rem;line-height:1;cursor:pointer;transition:color var(--ease);z-index:10}
 .lb-close:hover{color:#fff}
 .lb-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;width:100%;max-width:520px;max-height:92vh;overflow-y:auto;animation:lbIn 0.3s ease both}
 @keyframes lbIn{from{opacity:0;transform:scale(0.95) translateY(14px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.lb-image{aspect-ratio:4/3;background:#161616;overflow:hidden;position:relative}
-.lb-image img{width:100%;height:100%;object-fit:cover}
+.lb-image{aspect-ratio:4/3;background:#0f0f0f;overflow:hidden;position:relative}
+.lb-image img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%)}
 .lb-image .img-placeholder{height:100%;min-height:220px}
-.lb-sold-badge{position:absolute;top:14px;left:14px;background:var(--red);color:#fff;font-size:0.62rem;font-weight:600;letter-spacing:0.14em;padding:0.22rem 0.65rem;border-radius:4px;box-shadow:0 2px 10px var(--red-glow)}
+.lb-sold-badge{position:absolute;top:14px;left:14px;background:var(--red);color:#fff;font-size:0.62rem;font-weight:700;letter-spacing:0.14em;padding:0.22rem 0.65rem;border-radius:2px;box-shadow:0 2px 12px var(--red-glow)}
 .lb-body{padding:1.4rem 1.5rem 1.8rem}
 .lb-num{font-size:0.6rem;letter-spacing:0.22em;color:var(--text3);margin-bottom:0.4rem}
-.lb-name{font-family:"Playfair Display",serif;font-size:1.5rem;font-weight:400;color:var(--text);margin-bottom:0.45rem;line-height:1.2}
-.lb-price{font-size:1.05rem;color:#e0d0c0;margin-bottom:1rem}
-.lb-price.is-sold{color:var(--text3);text-decoration:line-through;font-size:0.9rem}
+.lb-name{font-family:"Bebas Neue",sans-serif;font-size:2rem;font-weight:400;letter-spacing:0.06em;color:var(--text);margin-bottom:0.45rem;line-height:1.1}
+.lb-price{font-family:"Bebas Neue",sans-serif;font-size:1.3rem;letter-spacing:0.05em;color:#fff;margin-bottom:1rem}
+.lb-price.is-sold{color:var(--text3);text-decoration:line-through;font-size:1rem}
 .lb-divider{border:none;border-top:1px solid var(--border);margin-bottom:1rem}
 .lb-details{display:flex;flex-direction:column;gap:0.45rem;font-size:0.77rem;color:var(--text3);margin-bottom:1.4rem}
 .lb-details strong{color:#aaa}
-.lb-cta{display:block;background:rgba(255,255,255,0.06);border:1px solid var(--border-hover);color:#fff;text-align:center;text-decoration:none;padding:0.78rem 1.5rem;font-size:0.77rem;letter-spacing:0.1em;border-radius:var(--radius);transition:all var(--ease)}
-.lb-cta:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.3)}
-.site-footer{background:#050505;border-top:1px solid var(--border);text-align:center;padding:3.5rem 2rem 2.5rem}
+.lb-cta{display:block;background:var(--red);border:1px solid var(--red);color:#fff;text-align:center;text-decoration:none;padding:0.78rem 1.5rem;font-size:0.77rem;letter-spacing:0.1em;border-radius:var(--radius);transition:all var(--ease);font-weight:500}
+.lb-cta:hover{background:#c41a1a;border-color:#c41a1a}
+.site-footer{background:#000;border-top:1px solid var(--border);text-align:center;padding:3.5rem 2rem 2.5rem}
 .footer-inner{max-width:400px;margin:0 auto;display:flex;flex-direction:column;gap:0.45rem}
-.footer-logo{font-family:"Playfair Display",serif;font-size:1rem;letter-spacing:0.25em;color:rgba(255,255,255,0.5);margin-bottom:0.5rem}
+.footer-logo{font-family:"Bebas Neue",sans-serif;font-size:1.2rem;letter-spacing:0.3em;color:rgba(255,255,255,0.4);margin-bottom:0.5rem}
 .site-footer p{font-size:0.75rem;color:var(--text3)}
-.site-footer a{color:rgba(255,255,255,0.5);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:1px;transition:color var(--ease),border-color var(--ease)}
-.site-footer a:hover{color:#fff;border-color:rgba(255,255,255,0.4)}
+.site-footer a{color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:1px;transition:color var(--ease),border-color var(--ease)}
+.site-footer a:hover{color:#fff;border-color:rgba(255,255,255,0.5)}
