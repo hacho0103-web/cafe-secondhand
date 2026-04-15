@@ -27,7 +27,7 @@ const items = [
   { id: 16, name: "위빙 스툴",        qty: 1, price: 250000,  note: null,                   status: "available", image: null },
   { id: 17, name: "벽 거울",            qty: 1, price: 300000,  note: null,                   status: "available", image: null },
   { id: 18, name: "달항아리 + 꽃",      qty: 1, price: 200000,  note: null,                   status: "sold",      image: null },
-  { id: 19, name: "카운터 책상",        qty: 1, price: 1200000, note: null,                   status: "available", image: null },
+  { id: 19, name: "카운터 책장",        qty: 1, price: 1200000, note: null,                   status: "available", image: null },
   { id: 21, name: "카운터 하부 수납장", qty: 1, price: 1500000, note: null,                   status: "sold",      image: null },
   { id: 22, name: "카운터 상부책장",    qty: 1, price: 1000000, note: null,                   status: "sold",      image: null },
   { id: 23, name: "카빙 수납장",        qty: 1, price: 1000000, note: null,                   status: "sold",      image: null },
