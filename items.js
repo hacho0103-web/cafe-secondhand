@@ -24,7 +24,7 @@ const items = [
   { id: 13, name: "벽선반 2단 세트",    qty: 1, price: 1000000, note: "설치비 포함",           status: "available", image: null },
   { id: 14, name: "커피 테이블",        qty: 2, price: 1000000, note: null,                   status: "available", image: null },
   { id: 15, name: "쿠션 스툴",          qty: 2, price: 500000,  note: null,                   status: "available", image: null },
-  { id: 16, name: "케이블 스툴",        qty: 1, price: 250000,  note: null,                   status: "available", image: null },
+  { id: 16, name: "위빙 스툴",        qty: 1, price: 250000,  note: null,                   status: "available", image: null },
   { id: 17, name: "벽 거울",            qty: 1, price: 300000,  note: null,                   status: "available", image: null },
   { id: 18, name: "달항아리 + 꽃",      qty: 1, price: 200000,  note: null,                   status: "sold",      image: null },
   { id: 19, name: "카운터 책상",        qty: 1, price: 1200000, note: null,                   status: "available", image: null },
