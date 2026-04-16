@@ -12,7 +12,7 @@
  */
 
 const items = [
-  { id: 1,  name: "가죽 스툴",          qty: 4, price: 150000,  note: null,                   status: "available", image: "images/01-Leather-Stool.jpg" },
+  { id: 1,  name: "가죽 스툴",          qty: 2, price: 150000,  note: null,                   status: "available", image: "images/01-Leather-Stool.jpg" },
   { id: 2,  name: "가죽 의자",          qty: 6, price: 250000,  note: null,                   status: "available", image: "images/02-Leather-Chair.jpg" },
   { id: 3,  name: "세발 의자",          qty: 2, price: 450000,  note: null,                   status: "available", image: "images/03-three-leg-chair.JPG" },
   { id: 4,  name: "엘피장",             qty: 1, price: 1300000, note: null,                   status: "sold",      image: "images/04-Lp.jpg" },
