@@ -18,7 +18,7 @@ const items = [
   { id: 3,  name: "세발 의자",          qty: 1, price: 450000,  note: null,                   status: "available", image: "images/03-three-leg-chair.JPG" },
   { id: 7,  name: "세발 의자",          qty: 1, price: 450000,  note: null,                   status: "sold",      image: "images/03-three-leg-chair.JPG" },
   { id: 4,  name: "엘피장",             qty: 1, price: 1300000, note: null,                   status: "sold",      image: "images/04-Lp.jpg" },
-  { id: 5,  name: "티비다이 하부장",    qty: 1, price: 2500000, note: null,                   status: "available", image: null },
+  { id: 5,  name: "티비다이 하부장",    qty: 1, price: 2500000, note: null,                   status: "available", image: "images/05.-tv.JPG" },
   { id: 9,  name: "작업대 테이블",      qty: 1, price: 1300000, note: "작업대 수납장과 세트", status: "sold",      image: "images/09-Table.JPG" },
   { id: 10, name: "작업대 수납장",      qty: 1, price: 1000000, note: "작업대 테이블과 세트", status: "sold",      image: "images/10-Table SEt.JPG" },
   { id: 11, name: "릴선",               qty: 1, price: 50000,   note: null,                   status: "sold",      image: "images/05-reel.JPG" },
