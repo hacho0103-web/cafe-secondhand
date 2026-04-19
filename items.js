@@ -12,18 +12,18 @@
  */
 
 const items = [
-  { id: 1,  name: "가죽 스툴",          qty: 2, price: 150000,  note: null,                   status: "available", image: "images/01-Leather-Stool.jpg" },
+  { id: 1,  name: "가죽 스툴",          qty: 2, price: 150000,  note: null,                   status: "sold",      image: "images/01-Leather-Stool.jpg" },
   { id: 2,  name: "가죽 의자",          qty: 6, price: 250000,  note: null,                   status: "available", image: "images/02-Leather-Chair.jpg" },
   { id: 3,  name: "세발 의자",          qty: 2, price: 450000,  note: null,                   status: "available", image: "images/03-three-leg-chair.JPG" },
   { id: 4,  name: "엘피장",             qty: 1, price: 1300000, note: null,                   status: "sold",      image: "images/04-Lp.jpg" },
   { id: 5,  name: "티비다이 하부장",    qty: 1, price: 2500000, note: null,                   status: "available", image: null },
   { id: 9,  name: "작업대 테이블",      qty: 1, price: 1300000, note: "작업대 수납장과 세트", status: "sold",      image: "images/09-Table.JPG" },
   { id: 10, name: "작업대 수납장",      qty: 1, price: 1000000, note: "작업대 테이블과 세트", status: "sold",      image: "images/10-Table SEt.JPG" },
-  { id: 11, name: "릴선",               qty: 1, price: 50000,   note: null,                   status: "available", image: null },
+  { id: 11, name: "릴선",               qty: 1, price: 50000,   note: null,                   status: "sold",      image: "images/05-reel.JPG" },
   { id: 12, name: "벽선반 4단 세트",    qty: 1, price: 3000000, note: "설치비 포함",           status: "available", image: "images/12-Wall-Shelve-4.jpg" },
   { id: 13, name: "벽선반 2단 세트",    qty: 1, price: 1000000, note: "설치비 포함",           status: "available", image: "images/13-Wall-Shelve-2.JPG" },
   { id: 14, name: "커피 테이블",        qty: 2, price: 1000000, note: null,                   status: "available", image: "images/14-Coffee-Table.jpg" },
-  { id: 15, name: "쿠션 스툴",          qty: 2, price: 500000,  note: null,                   status: "available", image: null },
+  { id: 15, name: "쿠션 스툴",          qty: 2, price: 500000,  note: null,                   status: "available", image: "images/15-cushion.JPG" },
   { id: 16, name: "위빙 스툴",          qty: 1, price: 250000,  note: null,                   status: "available", image: "images/16-Weaving-Stool.jpg" },
   { id: 17, name: "벽 거울",            qty: 1, price: 300000,  note: null,                   status: "available", image: "images/17-Mirror.jpg" },
   { id: 18, name: "달항아리 + 꽃",      qty: 1, price: 200000,  note: null,                   status: "sold",      image: null },
