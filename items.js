@@ -28,7 +28,7 @@ const items = [
   { id: 15, name: "쿠션 스툴",          qty: 1, price: 500000,  note: null,                   status: "available", image: "images/15-cushion.JPG" },
   { id: 32, name: "쿠션 스툴",          qty: 1, price: 500000,  note: null,                   status: "sold",      image: "images/15-cushion.JPG" },
   { id: 16, name: "위빙 스툴",          qty: 1, price: 250000,  note: null,                   status: "available", image: "images/16-Weaving-Stool.jpg" },
-  { id: 17, name: "벽 거울",            qty: 1, price: 300000,  note: null,                   status: "available", image: "images/17-Mirror.jpg" },
+  { id: 17, name: "벽 거울",            qty: 1, price: 300000,  note: null,                   status: "sold",      image: "images/17-Mirror.jpg" },
   { id: 18, name: "달항아리 + 꽃",      qty: 1, price: 200000,  note: null,                   status: "sold",      image: "images/18-flower.JPG" },
   { id: 19, name: "카운터 책상",        qty: 1, price: 1200000, note: null,                   status: "available", image: null },
   { id: 21, name: "카운터 하부 수납장", qty: 1, price: 1500000, note: null,                   status: "sold",      image: "images/21-Counter-Book.jpg" },
